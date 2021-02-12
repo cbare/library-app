@@ -1,0 +1,134 @@
+jchristopherbare@Eunice library-typescript-react % npx create-react-app library --template typescript
+npx: installed 67 in 3.724s
+
+Creating a new React app in /Users/jchristopherbare/Documents/projects/library-typescript-react/library.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template-typescript...
+
+
+> fsevents@1.2.13 install /Users/jchristopherbare/Documents/projects/library-typescript-react/library/node_modules/watchpack-chokidar2/node_modules/fsevents
+> node install.js
+
+No receipt for 'com.apple.pkg.CLTools_Executables' found at '/'.
+
+No receipt for 'com.apple.pkg.DeveloperToolsCLILeo' found at '/'.
+
+No receipt for 'com.apple.pkg.DeveloperToolsCLI' found at '/'.
+
+gyp: No Xcode or CLT version detected!
+gyp ERR! configure error 
+gyp ERR! stack Error: `gyp` failed with exit code: 1
+gyp ERR! stack     at ChildProcess.onCpExit (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/configure.js:351:16)
+gyp ERR! stack     at ChildProcess.emit (events.js:314:20)
+gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:276:12)
+gyp ERR! System Darwin 20.3.0
+gyp ERR! command "/usr/local/Cellar/node/14.9.0/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /Users/jchristopherbare/Documents/projects/library-typescript-react/library/node_modules/watchpack-chokidar2/node_modules/fsevents
+gyp ERR! node -v v14.9.0
+gyp ERR! node-gyp -v v5.1.0
+gyp ERR! not ok 
+
+> fsevents@1.2.13 install /Users/jchristopherbare/Documents/projects/library-typescript-react/library/node_modules/webpack-dev-server/node_modules/fsevents
+> node install.js
+
+No receipt for 'com.apple.pkg.CLTools_Executables' found at '/'.
+
+No receipt for 'com.apple.pkg.DeveloperToolsCLILeo' found at '/'.
+
+No receipt for 'com.apple.pkg.DeveloperToolsCLI' found at '/'.
+
+gyp: No Xcode or CLT version detected!
+gyp ERR! configure error 
+gyp ERR! stack Error: `gyp` failed with exit code: 1
+gyp ERR! stack     at ChildProcess.onCpExit (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/configure.js:351:16)
+gyp ERR! stack     at ChildProcess.emit (events.js:314:20)
+gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:276:12)
+gyp ERR! System Darwin 20.3.0
+gyp ERR! command "/usr/local/Cellar/node/14.9.0/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /Users/jchristopherbare/Documents/projects/library-typescript-react/library/node_modules/webpack-dev-server/node_modules/fsevents
+gyp ERR! node -v v14.9.0
+gyp ERR! node-gyp -v v5.1.0
+gyp ERR! not ok 
+
+> core-js@2.6.12 postinstall /Users/jchristopherbare/Documents/projects/library-typescript-react/library/node_modules/babel-runtime/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js@3.8.3 postinstall /Users/jchristopherbare/Documents/projects/library-typescript-react/library/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.8.3 postinstall /Users/jchristopherbare/Documents/projects/library-typescript-react/library/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall /Users/jchristopherbare/Documents/projects/library-typescript-react/library/node_modules/ejs
+> node ./postinstall.js
+
++ cra-template-typescript@1.1.2
++ react-scripts@4.0.2
++ react-dom@17.0.1
++ react@17.0.1
+added 1908 packages from 732 contributors and audited 1908 packages in 48.319s
+
+127 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Installing template dependencies using npm...
++ web-vitals@1.1.0
++ @types/jest@26.0.20
++ @types/react-dom@17.0.1
++ @types/react@17.0.2
++ @testing-library/jest-dom@5.11.9
++ @testing-library/react@11.2.5
++ @types/node@12.20.0
++ @testing-library/user-event@12.7.0
++ typescript@4.1.5
+added 34 packages from 105 contributors, updated 1 package and audited 1944 packages in 13.595s
+
+127 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+We detected TypeScript in your project (src/App.test.tsx) and created a tsconfig.json file for you.
+
+Your tsconfig.json has been populated with default values.
+
+Removing template package using npm...
+
+removed 1 package and audited 1943 packages in 8.554s
+
+127 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Success! Created library at /Users/jchristopherbare/Documents/projects/library-typescript-react/library
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd library
+  npm start
+
+Happy hacking!

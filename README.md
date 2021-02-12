@@ -2,6 +2,10 @@
 
 A web application for learning [Typescript][1] and [React][2].
 
+## Project template
+
+> npx create-react-app my-app --template typescript
+
 
 ## Recommended tools
 
