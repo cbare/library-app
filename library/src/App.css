@@ -13,6 +13,10 @@
   color: white;
 }
 
+.App main {
+  margin: 1em;
+}
+
 .navbar {
   position: relative;
   display: flex;
@@ -28,7 +32,6 @@
 
 .nav-logo .title {
   position: top;
-  margin-left: 0.6ex;
   font-size: calc(10px + 2vmin);
 }
 

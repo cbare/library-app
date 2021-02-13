@@ -1,10 +1,11 @@
 # Library app
 
-A web application for learning [Typescript][1] and [React][2], created in the model of Zoltan Debre's excellent [yoember][3] tutorial.
+A toy application for learning [Typescript][1] and [React][2], created in the model of Zoltan Debre's excellent [yoember][3] tutorial.
 
 ## Project template
 
 > npx create-react-app my-app --template typescript
+> npm install --save react-router-dom
 
 ## Recommended tools
 
