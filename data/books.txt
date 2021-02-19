@@ -1,0 +1,189 @@
+The Pragmatic Programmer: Your Journey To Mastery, 20th Anniversary Edition
+Andrew Hunt, David Thomas
+Addison-Wesley
+9780135957059
+September 13, 2019
+Computers
+
+Hands-On Machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems, 2nd Edition
+Aurélien Géron
+O'Reilly
+9781492032649
+October 15, 2019
+Computers, Machine learning
+
+Deep Learning
+Ian Goodfellow, Yoshua Bengio, Aaron Courville
+MIT Press
+9780262035613
+November 18, 2016
+Computers, Machine learning
+
+The Elements of Statistical Learning: Data Mining, Inference, and Prediction, 2nd Edition
+Trevor Hastie, Robert Tibshirani, Jerome Friedman
+Springer
+9780387848570
+January 1, 2016
+Computers, Machine learning
+
+Data Science from Scratch: First Principles with Python, 2nd Edition
+Joel Grus
+O'Reilly
+9781492041139
+May 16, 2019
+Computers, Machine learning
+
+Python Machine learning: Machine learning and Deep Learning with Python, scikit-learn, and TensorFlow 2, 3rd Edition
+Sebastian Raschka, Vahid Mirjalili
+Packt Publishing
+9781789955750
+December 12, 2019
+Computers, Machine learning
+
+Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython
+Wes McKinney
+O'Reilly
+9781491957660
+October 31, 2017
+Computers, Machine learning
+
+Practical Statistics for Data Scientists: 50+ Essential Concepts Using R and Python, 2nd Edition
+Peter Bruce, Andrew Bruce, Peter Gedeck
+O'Reilly
+9781492072942
+June 2, 2020
+Computers, Statistics, Data Science
+
+Deep Learning with Python, 1st Edition
+François Chollet
+Manning
+9781617294433
+December 22, 2017
+Computers, Machine learning
+
+Machine learning Design Patterns
+Valliappa Lakshmanan, Sara Robinson, Michael Munn
+O'Reilly
+9781098115784
+November 10, 2020
+Computers, Machine learning
+
+Designing Data-Intensive Applications
+Martin Kleppmann
+O'Reilly
+9781449373320
+April 18, 2017
+Computers
+
+Introduction to Natural Language Processing
+Jacob Eisenstein
+MIT Press
+9780262042840
+October 1, 2019
+Computers, Machine learning, Natural language processing
+
+Neural Network Methods in Natural Language Processing
+Yoav Goldberg
+Morgan & Claypool
+9781627052986
+April 17, 2017
+Computers, Machine learning, Natural language processing
+
+Natural Language Processing in Action
+Hobson Lane, Hannes Hapke, Cole Howard
+Manning
+9781617294631
+April 14, 2019
+Computers, Machine learning, Natural language processing
+
+The Penguin History of New Zealand, 2nd Edition
+Michael King
+Penguin Random House
+9780143567578
+February 1, 2012
+History
+
+Amsterdam: A History of the World's Most Liberal City
+Russell Shorto
+Vintage
+9780307743756
+August 12, 2014
+History
+
+The Island at the Center of the World
+Russell Shorto
+Vintage
+9780385503495
+April 12, 2005
+History
+
+Underland: A Deep Time Journey
+Robert Macfarlane
+Norton
+9780393242140
+June 4, 2019
+Nature writing
+
+Structure and Interpretation of Computer Programs, 2nd Edition
+Harold Abelson, Gerald Jay Sussman, Julie Sussman
+MIT Press
+9780262510875
+September 1, 1996
+Computers
+
+The Algorithm Design Manual, 3rd Edition
+Steven S. Skiena
+Springer
+9783030542559
+October 6, 2020
+Computers
+
+Introduction to Algorithms, 3rd Edition
+Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein
+MIT Press
+9780262033848
+September 1, 2009
+Computers
+
+Algorithms, 4th Edition
+Robert Sedgewick, Kevin Wayne
+Addison-Wesley
+9780321573513
+April 3, 2011
+Computers
+
+White Noise
+Don DeLillo
+Penguin
+9780140077025
+January 7, 1986
+Fiction
+
+The Book of Disquiet
+Fernando Pessoa
+Penguin Classics
+9780141183046
+December 31, 2002
+Fiction
+
+Agency
+William Gibson
+Berkley Books
+9781101986936
+January 21, 2020
+Fiction
+
+The Peripheral
+William Gibson
+Berkley Books
+9780399158445
+October 28, 2014
+Fiction
+
+Neuromancer
+William Gibson
+Ace Books
+9780441569588
+Oct 15, 1985
+Fiction
+
