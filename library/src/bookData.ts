@@ -416,8 +416,8 @@ export var authors_by_slug = new Map<string, AuthorEntry>();
 
 for (var book of books) {
   for (var author of book.authors) {
-    const slug = slugify(author)
-    const x = authors_by_slug.get(slug)
+    const slug = slugify(author);
+    const x = authors_by_slug.get(slug);
     if (x) {
       x.books.push(book)
     } else {
@@ -435,3 +435,13 @@ function byAuthorLastName(a: AuthorEntry, b: AuthorEntry) {
 }
 
 export var authors: AuthorEntry[] = Array.from(authors_by_slug.values()).sort(byAuthorLastName)
+
+
+export var publishers_by_slug = new Map<string, string>();
+for (var book of books) {
+  const slug = slugify(book.publisher);
+  const x = publishers_by_slug.get(slug);
+  if (!x) {
+    publishers_by_slug.set(slug, book.publisher);
+  }
+}

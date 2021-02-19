@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
-import {books, authors, authors_by_slug, AuthorEntry} from './bookData'
+import {books, authors, authors_by_slug, AuthorEntry, publishers_by_slug} from './bookData'
 import {byLastName, slugify} from './utils'
 
 function App() {
@@ -53,6 +53,9 @@ function App() {
             </Route>
             <Route path="/publishers">
               <Publishers/>
+            </Route>
+            <Route path="/publisher/:publisher_slug">
+              <Publisher/>
             </Route>
             <Route path="/about">
               <About/>
@@ -102,6 +105,16 @@ function AuthorLink(author: string) {
   return <li><Link to={"/author/" + slugify(author) }>{author}</Link></li>
 }
 
+
+interface PublisherParam {
+  publisher: string
+}
+
+function PublisherLink(props: PublisherParam) {
+  const { publisher } = props
+  return <Link to={"/publisher/" + slugify(publisher) }>{publisher}</Link>
+}
+
 function Book() {
   let {isbn} = useParams<IsbnParam>();
   let book = books.find(
@@ -113,7 +126,7 @@ function Book() {
         <h2>{ book.title }</h2>
         <p>{ book.isbn }</p>
         <ul>{ book.authors.map(AuthorLink) }</ul>
-        <p>{ book.publisher }</p>
+        <p><PublisherLink publisher={ book.publisher } /></p>
         <p>{ book.published_on }</p>
         <p>{ book.category }</p>
       </div>
@@ -181,8 +194,6 @@ function Author() {
       </div>
     );
   }
-
-
 }
 
 function Publishers() {
@@ -195,13 +206,49 @@ function Publishers() {
       <ul>
         { publishers.map(
             function(publisher) {
-              return (<li>{publisher}</li>)
+              return (<li><PublisherLink publisher={ publisher } /></li>)
             }
           )
         }
       </ul>
     </div>
   );
+}
+
+interface PublisherSlugParam {
+  publisher_slug: string
+}
+
+function Publisher() {
+  let {publisher_slug} = useParams<PublisherSlugParam>();
+  let publisher = publishers_by_slug.get(publisher_slug)
+  if (publisher) {
+    return (
+      <div>
+        <h2>{publisher}</h2>
+        <h2>Books</h2>
+        <ul>
+          { books.filter((b) => b.publisher === publisher)?.map(
+              function(b) {
+                return (
+                  <li key={b.isbn}>
+                    <Link to={"/book/" + b.isbn }>{b.title}</Link>
+                  </li>)
+              }
+            )
+          }
+        </ul>
+      </div>
+    );
+  }
+  else {
+    return (
+      <div>
+        <h2>Not found</h2>
+        <p>We don't have a publisher "{ publisher_slug }".</p>
+      </div>
+    );
+  }
 }
 
 function Login() {
