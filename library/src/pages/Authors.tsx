@@ -2,10 +2,11 @@ import {
   Link,
   useParams,
 } from "react-router-dom";
+import {useLibraryStore} from '../stores/LibraryStore'
 
-import {authors, authors_by_slug} from '../bookData'
 
 export function Authors() {
+  const {authors} = useLibraryStore()
   return (
     <div>
       <h2>Authors</h2>
@@ -26,7 +27,8 @@ interface AuthorSlugParam {
 }
 
 export function Author() {
-  let {author_slug} = useParams<AuthorSlugParam>();
+  const {author_slug} = useParams<AuthorSlugParam>();
+  const {authors_by_slug} = useLibraryStore()
   let author = authors_by_slug.get(author_slug);
 
   if (author) {

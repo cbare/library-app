@@ -1,8 +1,9 @@
+import { useContext } from "react";
 import {
   Link,
   useParams
 } from "react-router-dom";
-import {books, categories_by_slug} from '../bookData'
+import { useLibraryStore } from "../stores/LibraryStore";
 
 interface CategorySlugParam {
   category_slug: string;
@@ -10,6 +11,7 @@ interface CategorySlugParam {
 
 export function Category() {
   let {category_slug} = useParams<CategorySlugParam>();
+  const {categories_by_slug, books} = useLibraryStore();
   let category = categories_by_slug.get(category_slug);
   if (category) {
     return (

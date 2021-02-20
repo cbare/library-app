@@ -1,13 +1,6 @@
 import { byLastName, slugify } from "./utils";
+import {Book} from './models/LibraryModels'
 
-interface Book {
-  title: string,
-  authors: string[];
-  publisher: string;
-  isbn: string;
-  published_on: string;
-  category: string[];
-}
 
 export const books: Book[] = [
     {

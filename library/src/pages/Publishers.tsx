@@ -2,14 +2,15 @@ import {
   Link,
   useParams
 } from "react-router-dom";
-import {books, publishers_by_slug} from '../bookData'
 import {PublisherLink} from '../components/PublisherLink'
+import { useLibraryStore } from "../stores/LibraryStore";
 
 
 export function Publishers() {
+  const {books} = useLibraryStore()
   let publishers = Array.from(new Set(books.map(
     function(b) { return b.publisher }
-  ))).sort();
+  ))).sort()
   return (
     <div>
       <h2>Publishers</h2>
@@ -31,6 +32,8 @@ interface PublisherSlugParam {
 
 export function Publisher() {
   let {publisher_slug} = useParams<PublisherSlugParam>();
+  const {books, publishers_by_slug} = useLibraryStore()
+
   let publisher = publishers_by_slug.get(publisher_slug)
   if (publisher) {
     return (

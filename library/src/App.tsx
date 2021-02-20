@@ -8,11 +8,11 @@ import {
 import logo from './logo.svg';
 import './App.css';
 import {Home} from './pages/Home'
-import {Books} from './pages/Books'
-import {Book} from './pages/Book'
+import {Book, Books} from './pages/Books'
 import {Author, Authors} from './pages/Authors'
 import {Publisher, Publishers} from './pages/Publishers'
 import {Category} from './pages/Category'
+import {LibraryStoreProvider} from './stores/LibraryStore'
 
 
 function App() {
@@ -39,6 +39,7 @@ function App() {
         </header>
 
         <main>
+          <LibraryStoreProvider>
           <Switch>
             <Route exact path="/">
               <Home/>
@@ -71,6 +72,7 @@ function App() {
               <Login/>
             </Route>
           </Switch>
+          </LibraryStoreProvider>
         </main>
       </div>
     </Router>

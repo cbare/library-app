@@ -1,11 +1,12 @@
 import {
   Link,
 } from "react-router-dom";
+import { useLibraryStore } from "../stores/LibraryStore";
 
-import {categories} from '../bookData'
 import {slugify} from '../utils'
 
 export function Home() {
+  const {categories} = useLibraryStore()
   return (
     <div>
       <h2>Library Home</h2>
