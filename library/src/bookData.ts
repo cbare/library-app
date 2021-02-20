@@ -76,7 +76,8 @@ export const books: Book[] = [
       "published_on": "May 16, 2019",
       "category": [
         "Computers",
-        "Machine learning"
+        "Machine learning",
+        "Data Science"
       ]
     },
     {
@@ -103,7 +104,8 @@ export const books: Book[] = [
       "published_on": "October 31, 2017",
       "category": [
         "Computers",
-        "Machine learning"
+        "Machine learning",
+        "Data Science"
       ]
     },
     {
@@ -159,7 +161,8 @@ export const books: Book[] = [
       "isbn": "9781449373320",
       "published_on": "April 18, 2017",
       "category": [
-        "Computers"
+        "Computers",
+        "Data Science"
       ]
     },
     {
@@ -445,3 +448,16 @@ for (var book of books) {
     publishers_by_slug.set(slug, book.publisher);
   }
 }
+
+export var categories_by_slug = new Map<string, string>();
+for (var book of books) {
+  for (var category of book.category) {
+    const slug = slugify(category);
+    const x = categories_by_slug.get(slug)
+    if (!x) {
+      categories_by_slug.set(slug, category)
+    }
+  }
+}
+
+export var categories: string[] = Array.from(categories_by_slug.values()).sort()

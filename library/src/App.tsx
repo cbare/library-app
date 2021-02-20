@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
-import {books, authors, authors_by_slug, AuthorEntry, publishers_by_slug} from './bookData'
+import {books, authors, authors_by_slug, publishers_by_slug, categories, categories_by_slug} from './bookData'
 import {byLastName, slugify} from './utils'
 
 function App() {
@@ -45,6 +45,9 @@ function App() {
             <Route path="/book/:isbn">
               <Book/>
             </Route>
+            <Route path="/category/:category_slug">
+              <Category/>
+            </Route>
             <Route path="/authors">
               <Authors/>
             </Route>
@@ -73,7 +76,17 @@ function App() {
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
+      <h2>Library Home</h2>
+      <p>What kinds of books are you interested in?</p>
+      <ul>
+        {
+          categories.map(
+            function(c) {
+              return <li><Link to={"/category/" + slugify(c)}>{c}</Link></li>
+            }
+          )
+        }
+      </ul>
     </div>
   );
 }
@@ -246,6 +259,41 @@ function Publisher() {
       <div>
         <h2>Not found</h2>
         <p>We don't have a publisher "{ publisher_slug }".</p>
+      </div>
+    );
+  }
+}
+
+interface CategorySlugParam {
+  category_slug: string;
+}
+
+function Category() {
+  let {category_slug} = useParams<CategorySlugParam>();
+  let category = categories_by_slug.get(category_slug);
+  if (category) {
+    return (
+      <div>
+        <h2>{category}</h2>
+        <ul>
+          { books.filter((b) => category && b.category.includes(category))?.map(
+              function(b) {
+                return (
+                  <li key={b.isbn}>
+                    <Link to={"/book/" + b.isbn }>{b.title}</Link>
+                  </li>)
+              }
+            )
+          }
+        </ul>
+      </div>
+    );
+  }
+  else {
+    return (
+      <div>
+        <h2>Not found</h2>
+        <p>We don't have a category "{ category_slug }".</p>
       </div>
     );
   }
