@@ -356,5 +356,41 @@
     "category": [
       "Fiction"
     ]
+  },
+  {
+    "title": "Foundation, Foundation and Empire, Second Foundation",
+    "authors": [
+      "Isaac Asimov"
+    ],
+    "publisher": "Penguin Random House",
+    "isbn": "9780307593962",
+    "published_on": "Nov 02, 2010",
+    "category": [
+      "Fiction", "Science Fiction"
+    ]
+  },
+  {
+    "title": "The Plague, The Fall, Exile and the Kingdom, and Selected Essays",
+    "authors": [
+      "Albert Camus"
+    ],
+    "publisher": "Penguin Random House",
+    "isbn": "9781400042555",
+    "published_on": "Aug 17, 2004",
+    "category": [
+      "Fiction"
+    ]
+  },
+  {
+    "title": "The History of Jazz",
+    "authors": [
+      "Ted Gioia"
+    ],
+    "publisher": "Oxford University Press",
+    "isbn": "9780195126532",
+    "published_on": "December 17, 1998",
+    "category": [
+      "History", "Music"
+    ]
   }
 ]
