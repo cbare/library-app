@@ -13,7 +13,7 @@ export function Books() {
   return (
     <div>
       <h2>Books</h2>
-      <ul>
+      <ul className="bookList">
         { books.sort(byTitle).map(
             function(b) {
               return (
@@ -48,10 +48,13 @@ export function Book() {
       <div>
         <h2>{ book.title }</h2>
         <p>{ book.isbn }</p>
-        <ul>{ book.authors.map(AuthorLink) }</ul>
+        <ul className="csv">{ book.authors.map(AuthorLink) }</ul>
         <p><PublisherLink publisher={ book.publisher } /></p>
         <p>{ book.published_on }</p>
-        <p>{ book.category }</p>
+        <ul className="csv">{ book.category.map(
+          (c) => <li><Link to={"/category/" + slugify(c)}>{c}</Link></li>
+        ) }
+        </ul>
       </div>
     );
   }

@@ -17,7 +17,7 @@ export function Category() {
     return (
       <div>
         <h2>{category}</h2>
-        <ul>
+        <ul className="bookList">
           { books.filter((b) => category && b.category.includes(category))?.map(
               function(b) {
                 return (

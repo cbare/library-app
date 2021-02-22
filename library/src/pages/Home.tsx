@@ -11,7 +11,7 @@ export function Home() {
     <div>
       <h2>Library Home</h2>
       <p>What kinds of books are you interested in?</p>
-      <ul>
+      <ul className="bookList">
         {
           categories.map(
             function(c) {

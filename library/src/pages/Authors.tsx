@@ -10,7 +10,7 @@ export function Authors() {
   return (
     <div>
       <h2>Authors</h2>
-      <ul>
+      <ul className="bookList">
         { authors.map(
             function(a) {
               return (<li><Link to={"/author/" + a.slug }>{a.author}</Link></li>)
@@ -36,7 +36,7 @@ export function Author() {
       <div>
         <h2>{ author.author }</h2>
         <h3>Books</h3>
-        <ul>
+        <ul className="bookList">
           { author.books.map(
               function(b) {
                 return (

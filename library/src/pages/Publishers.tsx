@@ -14,7 +14,7 @@ export function Publishers() {
   return (
     <div>
       <h2>Publishers</h2>
-      <ul>
+      <ul className="bookList">
         { publishers.map(
             function(publisher) {
               return (<li><PublisherLink publisher={ publisher } /></li>)
@@ -40,7 +40,7 @@ export function Publisher() {
       <div>
         <h2>{publisher}</h2>
         <h2>Books</h2>
-        <ul>
+        <ul className="bookList">
           { books.filter((b) => b.publisher === publisher)?.map(
               function(b) {
                 return (
