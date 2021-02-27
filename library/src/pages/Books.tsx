@@ -46,6 +46,7 @@ export function Book() {
   if (book) {
     return (
       <div>
+        <img src={ "/images/cover-" + book.isbn + ".jpg" }/>
         <h2>{ book.title }</h2>
         <p>{ book.isbn }</p>
         <ul className="csv">{ book.authors.map(AuthorLink) }</ul>

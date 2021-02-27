@@ -7,7 +7,7 @@
     ],
     "publisher": "Addison-Wesley",
     "isbn": "9780135957059",
-    "published-on": "September 13, 2019",
+    "published_on": "September 13, 2019",
     "category": [
       "Computers"
     ]
@@ -19,7 +19,7 @@
     ],
     "publisher": "O'Reilly",
     "isbn": "9781492032649",
-    "published-on": "October 15, 2019",
+    "published_on": "October 15, 2019",
     "category": [
       "Computers",
       "Machine learning"
@@ -34,7 +34,7 @@
     ],
     "publisher": "MIT Press",
     "isbn": "9780262035613",
-    "published-on": "November 18, 2016",
+    "published_on": "November 18, 2016",
     "category": [
       "Computers",
       "Machine learning"
@@ -49,10 +49,11 @@
     ],
     "publisher": "Springer",
     "isbn": "9780387848570",
-    "published-on": "January 1, 2016",
+    "published_on": "January 1, 2016",
     "category": [
       "Computers",
-      "Machine learning"
+      "Machine learning",
+      "Statistics"
     ]
   },
   {
@@ -62,7 +63,7 @@
     ],
     "publisher": "O'Reilly",
     "isbn": "9781492041139",
-    "published-on": "May 16, 2019",
+    "published_on": "May 16, 2019",
     "category": [
       "Computers",
       "Machine learning"
@@ -76,7 +77,7 @@
     ],
     "publisher": "Packt Publishing",
     "isbn": "9781789955750",
-    "published-on": "December 12, 2019",
+    "published_on": "December 12, 2019",
     "category": [
       "Computers",
       "Machine learning"
@@ -88,8 +89,8 @@
       "Wes McKinney"
     ],
     "publisher": "O'Reilly",
-    "isbn": "9781491957660",
-    "published-on": "October 31, 2017",
+    "isbn": "9781491957615",
+    "published_on": "October 31, 2017",
     "category": [
       "Computers",
       "Machine learning"
@@ -104,11 +105,11 @@
     ],
     "publisher": "O'Reilly",
     "isbn": "9781492072942",
-    "published-on": "June 2, 2020",
+    "published_on": "June 2, 2020",
     "category": [
       "Computers",
-      "Statistics",
-      "Data Science"
+      "Data Science",
+      "Statistics"
     ]
   },
   {
@@ -118,7 +119,7 @@
     ],
     "publisher": "Manning",
     "isbn": "9781617294433",
-    "published-on": "December 22, 2017",
+    "published_on": "December 22, 2017",
     "category": [
       "Computers",
       "Machine learning"
@@ -133,7 +134,7 @@
     ],
     "publisher": "O'Reilly",
     "isbn": "9781098115784",
-    "published-on": "November 10, 2020",
+    "published_on": "November 10, 2020",
     "category": [
       "Computers",
       "Machine learning"
@@ -146,7 +147,7 @@
     ],
     "publisher": "O'Reilly",
     "isbn": "9781449373320",
-    "published-on": "April 18, 2017",
+    "published_on": "April 18, 2017",
     "category": [
       "Computers"
     ]
@@ -158,7 +159,7 @@
     ],
     "publisher": "MIT Press",
     "isbn": "9780262042840",
-    "published-on": "October 1, 2019",
+    "published_on": "October 1, 2019",
     "category": [
       "Computers",
       "Machine learning",
@@ -172,7 +173,7 @@
     ],
     "publisher": "Morgan & Claypool",
     "isbn": "9781627052986",
-    "published-on": "April 17, 2017",
+    "published_on": "April 17, 2017",
     "category": [
       "Computers",
       "Machine learning",
@@ -188,7 +189,7 @@
     ],
     "publisher": "Manning",
     "isbn": "9781617294631",
-    "published-on": "April 14, 2019",
+    "published_on": "April 14, 2019",
     "category": [
       "Computers",
       "Machine learning",
@@ -202,7 +203,7 @@
     ],
     "publisher": "Penguin Random House",
     "isbn": "9780143567578",
-    "published-on": "February 1, 2012",
+    "published_on": "February 1, 2012",
     "category": [
       "History"
     ]
@@ -214,7 +215,7 @@
     ],
     "publisher": "Vintage",
     "isbn": "9780307743756",
-    "published-on": "August 12, 2014",
+    "published_on": "August 12, 2014",
     "category": [
       "History"
     ]
@@ -226,7 +227,7 @@
     ],
     "publisher": "Vintage",
     "isbn": "9780385503495",
-    "published-on": "April 12, 2005",
+    "published_on": "April 12, 2005",
     "category": [
       "History"
     ]
@@ -238,9 +239,9 @@
     ],
     "publisher": "Norton",
     "isbn": "9780393242140",
-    "published-on": "June 4, 2019",
+    "published_on": "June 4, 2019",
     "category": [
-      "Nature writing"
+      "Nature"
     ]
   },
   {
@@ -252,7 +253,7 @@
     ],
     "publisher": "MIT Press",
     "isbn": "9780262510875",
-    "published-on": "September 1, 1996",
+    "published_on": "September 1, 1996",
     "category": [
       "Computers"
     ]
@@ -264,7 +265,7 @@
     ],
     "publisher": "Springer",
     "isbn": "9783030542559",
-    "published-on": "October 6, 2020",
+    "published_on": "October 6, 2020",
     "category": [
       "Computers"
     ]
@@ -279,7 +280,7 @@
     ],
     "publisher": "MIT Press",
     "isbn": "9780262033848",
-    "published-on": "September 1, 2009",
+    "published_on": "September 1, 2009",
     "category": [
       "Computers"
     ]
@@ -292,7 +293,7 @@
     ],
     "publisher": "Addison-Wesley",
     "isbn": "9780321573513",
-    "published-on": "April 3, 2011",
+    "published_on": "April 3, 2011",
     "category": [
       "Computers"
     ]
@@ -304,7 +305,7 @@
     ],
     "publisher": "Penguin",
     "isbn": "9780140077025",
-    "published-on": "January 7, 1986",
+    "published_on": "January 7, 1986",
     "category": [
       "Fiction"
     ]
@@ -316,7 +317,7 @@
     ],
     "publisher": "Penguin Classics",
     "isbn": "9780141183046",
-    "published-on": "December 31, 2002",
+    "published_on": "December 31, 2002",
     "category": [
       "Fiction"
     ]
@@ -328,9 +329,10 @@
     ],
     "publisher": "Berkley Books",
     "isbn": "9781101986936",
-    "published-on": "January 21, 2020",
+    "published_on": "January 21, 2020",
     "category": [
-      "Fiction"
+      "Fiction",
+      "Science Fiction"
     ]
   },
   {
@@ -340,9 +342,10 @@
     ],
     "publisher": "Berkley Books",
     "isbn": "9780399158445",
-    "published-on": "October 28, 2014",
+    "published_on": "October 28, 2014",
     "category": [
-      "Fiction"
+      "Fiction",
+      "Science Fiction"
     ]
   },
   {
@@ -352,9 +355,10 @@
     ],
     "publisher": "Ace Books",
     "isbn": "9780441569588",
-    "published-on": "Oct 15, 1985",
+    "published_on": "Oct 15, 1985",
     "category": [
-      "Fiction"
+      "Fiction",
+      "Science Fiction"
     ]
   },
   {
@@ -366,7 +370,8 @@
     "isbn": "9780307593962",
     "published_on": "Nov 02, 2010",
     "category": [
-      "Fiction", "Science Fiction"
+      "Fiction",
+      "Science Fiction"
     ]
   },
   {
@@ -390,7 +395,8 @@
     "isbn": "9780195126532",
     "published_on": "December 17, 1998",
     "category": [
-      "History", "Music"
+      "History",
+      "Music"
     ]
   }
 ]
