@@ -70,6 +70,7 @@ export const books: Book[] = [
     "published_on": "May 16, 2019",
     "category": [
       "Computers",
+      "Data science",
       "Machine learning"
     ]
   },
@@ -97,6 +98,7 @@ export const books: Book[] = [
     "published_on": "October 31, 2017",
     "category": [
       "Computers",
+      "Data science",
       "Machine learning"
     ]
   },
@@ -112,7 +114,7 @@ export const books: Book[] = [
     "published_on": "June 2, 2020",
     "category": [
       "Computers",
-      "Data Science",
+      "Data science",
       "Statistics"
     ]
   },
