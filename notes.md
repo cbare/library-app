@@ -4,7 +4,6 @@
 
 ### feature
 - add History
-- cover images
 - links to goodreads, google books, open library, worldcat
 - links to spl and wellington city libraries
 - import new books from API

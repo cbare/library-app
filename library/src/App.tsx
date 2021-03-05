@@ -8,15 +8,22 @@ import {
 import logo from './logo.svg';
 import './App.css';
 import {Home} from './pages/Home'
-import {Book, Books} from './pages/Books'
 import {Author, Authors} from './pages/Authors'
-import {Publisher, Publishers} from './pages/Publishers'
+import {Book, Books} from './pages/Books'
 import {Category} from './pages/Category'
+import {Login} from './pages/Login'
+import {Publisher, Publishers} from './pages/Publishers'
 import {LibraryStoreProvider} from './stores/LibraryStore'
+import { Auth0Provider } from "@auth0/auth0-react";
 
 
 function App() {
   return (
+    <Auth0Provider
+        domain="dev-gl6ejecq.au.auth0.com"
+        clientId="8bWe12PZ8p0BCPGthw1SW6PTf7OOxMq8"
+        redirectUri={window.location.origin + '/login'}
+      >
     <Router>
       <div className="App">
 
@@ -39,6 +46,7 @@ function App() {
         </header>
 
         <main>
+          <p>{window.location.origin + '/login'}</p>
           <LibraryStoreProvider>
           <Switch>
             <Route exact path="/">
@@ -76,25 +84,11 @@ function App() {
         </main>
       </div>
     </Router>
+    </Auth0Provider>
   );
 }
 
 
-
-
-
-
-
-
-
-
-function Login() {
-  return (
-    <div>
-      <h2>Login</h2>
-    </div>
-  );
-}
 
 function About() {
   return (
