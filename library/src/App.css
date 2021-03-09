@@ -17,6 +17,26 @@
   margin: 1em;
 }
 
+a:link {
+  color: #336699;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #336699;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3366FF;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #3366FF;
+  text-decoration: underline;
+}
+
 .bookList li {
   list-style-type: none;
   margin-top: 6pt;
