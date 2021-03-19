@@ -110,7 +110,15 @@ a:active {
 }
 
 .navbar a {
+  color: #bdccd0;
   margin-right: 1em;
   margin-left: 1em;
 }
 
+.navbar .ProfileImage {
+  max-height:5vmin;
+}
+
+.ProfileImage {
+  border-radius: 50%;
+}

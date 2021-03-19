@@ -2,6 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
+  Redirect,
   Route,
   Link,
 } from "react-router-dom";
@@ -12,10 +13,13 @@ import {Author, Authors} from './pages/Authors'
 import {Book, Books} from './pages/Books'
 import {Category} from './pages/Category'
 import {Login} from './pages/Login'
+import {Profile} from './pages/Profile'
+import ProfileMenu from './components/ProfileMenu'
 import {Publisher, Publishers} from './pages/Publishers'
+import {Test} from './pages/Test'
 import {LibraryStoreProvider} from './stores/LibraryStore'
 import { Auth0Provider } from "@auth0/auth0-react";
-
+import { TestProfileStoreProvider } from './stores/TestProfileStore';
 
 function App() {
   return (
@@ -39,15 +43,14 @@ function App() {
               <li><Link to="/publishers">Publishers</Link></li>
             </ul>
             <ul className="nav-menu">
-              <li><Link to="/login">Login</Link></li>
-              <li><Link to="/about">About</Link></li>
+              <li><ProfileMenu/></li>
             </ul>
           </nav>
         </header>
 
         <main>
-          <p>{window.location.origin + '/login'}</p>
           <LibraryStoreProvider>
+          <TestProfileStoreProvider>
           <Switch>
             <Route exact path="/">
               <Home/>
@@ -79,7 +82,17 @@ function App() {
             <Route path="/login">
               <Login/>
             </Route>
+            <Route path="/profile/:username">
+              <Profile/>
+            </Route>
+            <Route path="/test/:username">
+              <Test/>
+            </Route>
+            <Route path="/">
+              <Redirect to="/" />
+            </Route>
           </Switch>
+          </TestProfileStoreProvider>
           </LibraryStoreProvider>
         </main>
       </div>
